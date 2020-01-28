@@ -1,0 +1,8 @@
+.navbar{
+  .logo{
+    &__text{
+
+     @include bold
+    }
+  }
+}

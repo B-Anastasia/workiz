@@ -244,15 +244,13 @@ html {
   font-size: 2.2rem;
   color: #fff;
   cursor: pointer; }
+  @media only screen and (max-width: 37.5em) {
+    .menu__nav .menu__link {
+      font-size: 3rem; } }
+  @media only screen and (min-width: 112.5em) {
+    .menu__nav .menu__link {
+      font-size: 2rem; } }
   .menu__nav .menu__link:link, .menu__nav .menu__link:visited {
     text-decoration: none; }
   .menu__nav .menu__link:hover, .menu__nav .menu__link:active {
     color: #383836; }
-
-@media only screen and (max-width: 37.5em) {
-  .menu__nav {
-    font-size: 3rem; } }
-
-@media only screen and (min-width: 112.5em) {
-  .menu__nav {
-    font-size: 2rem; } }

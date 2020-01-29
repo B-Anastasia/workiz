@@ -1,0 +1,34 @@
+.btn{
+  transition: all 0.2s;
+  background-color: $color-primary-brown;
+  color: #fff;
+      font-family: inherit;
+
+  &,
+  &:link,
+  &:visited {
+    font-size: 1.6rem;
+    border-radius: 10rem;
+    display: block;
+    border: none;
+    padding: 1.5rem 4rem;
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+  }
+
+  &:hover {
+    box-shadow: $border-shadow;
+    transform: translateY(-3px);
+  }
+
+  &:focus {
+    outline-style: none;
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    border: none;
+  }
+
+   }

@@ -135,7 +135,13 @@ html {
   height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(217, 216, 211, 0.6), rgba(246, 246, 246, 0.5)), url("./../img/hero-bc.jpg");
   background-size: cover;
-  background-position: top; }
+  background-position: top;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .hero {
+      flex-direction: column; } }
   .hero__title {
     font-size: 4rem;
     font-family: 'Fredoka One', coursive, sans-serif;
@@ -145,9 +151,77 @@ html {
     font-size: 1.5rem; }
 
 .hero-text {
-  width: 20rem;
-  position: absolute;
-  top: 40%; }
+  display: block;
+  max-width: 40rem; }
   @media only screen and (max-width: 56.25em) {
     .hero-text {
       width: 100%; } }
+
+form {
+  margin-top: 8rem;
+  transition: all 2s ease-in-out; }
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 44rem;
+  background-color: rgba(249, 221, 26, 0.8);
+  border-radius: 3rem;
+  outline: none;
+  font-size: 1.8rem;
+  padding: 3rem 6rem; }
+  .contact-form input, .contact-form select, .contact-form textarea {
+    border: none;
+    border-bottom: 1px solid #D9D8D3;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: .7rem;
+    font-family: inherit;
+    outline: none; }
+    .contact-form input[type=submit], .contact-form select[type=submit], .contact-form textarea[type=submit] {
+      width: 25rem;
+      border-radius: 10rem;
+      font-family: 'Varela Round', sans-serif;
+      text-transform: uppercase; }
+  .contact-form textarea {
+    resize: none;
+    overflow: auto;
+    outline: none;
+    margin-bottom: 2rem;
+    color: #383836; }
+  .contact-form select {
+    color: #383836; }
+    .contact-form select option {
+      outline: none; }
+  .contact-form__title {
+    color: #383836;
+    font-size: 3.2rem;
+    width: 100%;
+    font-weight: bold;
+    text-align: center; }
+
+.btn {
+  transition: all 0.2s;
+  background-color: #383836;
+  color: #fff;
+  font-family: inherit; }
+  .btn, .btn:link, .btn:visited {
+    font-size: 1.6rem;
+    border-radius: 10rem;
+    display: block;
+    border: none;
+    padding: 1.5rem 4rem;
+    cursor: pointer;
+    text-align: center;
+    margin: auto; }
+  .btn:hover {
+    box-shadow: 0 0.5px 2rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px); }
+  .btn:focus {
+    outline-style: none; }
+  .btn:active {
+    transform: translateY(-1px);
+    border: none; }

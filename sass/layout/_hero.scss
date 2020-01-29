@@ -5,11 +5,13 @@
   url("./../img/hero-bc.jpg");
   background-size: cover;
   background-position: top;
-
-
-  
-
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+         
+  @include respond(tab-port){
+    flex-direction: column;
+  }
 
   &__title{
     font-size: 4rem;
@@ -23,18 +25,10 @@
   }
 }
 .hero-text {
-  width: 20rem;
-  position: absolute;
-  top: 40%;
+  display: block;
+  max-width: 40rem;
 
   @include respond(tab-port){
     width: 100%;
-
   }
-  @include respond(tab-port){
-    //position: static;
-
-  }
-
-
 }

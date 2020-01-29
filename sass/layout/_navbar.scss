@@ -9,11 +9,15 @@
     justify-content: space-between;
     align-items: center;
     min-height: 80px;
-
+    @include respond( phone ){
+      justify-content: space-around;
+    }
   }
   .logo{
     text-align: center;
     color: $color-primary-brown;
+
+
     &__text{
       display: inline-block;
       font-size: 2.1rem;
@@ -22,6 +26,10 @@
       padding: 2px 5px;
       margin-bottom: 2px;
       @include bold;
+
+      @include respond(phone){
+        font-size: 2.5rem;
+      }
     }
     &__description{
       font-size: 1.5rem;
@@ -45,13 +53,26 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
+
+      @include respond(phone){
+        flex-direction: column;
+        align-content: space-around;
+        height: 23rem;
+
+      }
     }
 
     &__link{
       text-transform: uppercase;
-      font-size: 1.7rem;
+      font-size: 2.2rem;
       text-decoration: none;
       color: #fff;
+      @include respond(phone){
+        font-size: 3rem;
+      }
+      @include respond(big-desktop){
+        font-size: 2rem;
+      }
     }
 
 

@@ -25,12 +25,33 @@ body {
   box-sizing: border-box;
   font-family: 'Varela Round', sans-serif; }
 
+.header {
+  height: 8rem; }
+
 .container {
-  max-width: 1200px;
+  max-width: 120rem;
   margin: auto; }
+  @media only screen and (min-width: 112.5em) {
+    .container {
+      width: 130rem; } }
+  @media only screen and (max-width: 75em) {
+    .container {
+      width: 100rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      width: 80%; } }
+  @media only screen and (max-width: 37.5em) {
+    .container {
+      width: 85%; } }
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 .navbar {
   position: fixed;
@@ -43,6 +64,9 @@ html {
     justify-content: space-between;
     align-items: center;
     min-height: 80px; }
+    @media only screen and (max-width: 37.5em) {
+      .navbar-wrap {
+        justify-content: space-around; } }
   .navbar .logo {
     text-align: center;
     color: #383836; }
@@ -54,6 +78,9 @@ html {
       padding: 2px 5px;
       margin-bottom: 2px;
       font-family: 'Fredoka One', coursive, sans-serif; }
+      @media only screen and (max-width: 37.5em) {
+        .navbar .logo__text {
+          font-size: 2.5rem; } }
     .navbar .logo__description {
       font-size: 1.5rem;
       display: block;
@@ -72,11 +99,22 @@ html {
       display: flex;
       align-items: center;
       justify-content: space-around; }
+      @media only screen and (max-width: 37.5em) {
+        .navbar .menu__nav {
+          flex-direction: column;
+          align-content: space-around;
+          height: 23rem; } }
     .navbar .menu__link {
       text-transform: uppercase;
-      font-size: 1.7rem;
+      font-size: 2.2rem;
       text-decoration: none;
       color: #fff; }
+      @media only screen and (max-width: 37.5em) {
+        .navbar .menu__link {
+          font-size: 3rem; } }
+      @media only screen and (min-width: 112.5em) {
+        .navbar .menu__link {
+          font-size: 2rem; } }
     .navbar .menu-button {
       display: flex;
       align-items: center;
@@ -110,3 +148,6 @@ html {
   width: 20rem;
   position: absolute;
   top: 40%; }
+  @media only screen and (max-width: 56.25em) {
+    .hero-text {
+      width: 100%; } }

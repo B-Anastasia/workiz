@@ -26,4 +26,15 @@
   width: 20rem;
   position: absolute;
   top: 40%;
+
+  @include respond(tab-port){
+    width: 100%;
+
+  }
+  @include respond(tab-port){
+    //position: static;
+
+  }
+
+
 }

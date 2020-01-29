@@ -42,7 +42,7 @@
     position: fixed;
     top: 80px;
     padding: 16px 0;
-    background-color: $color-primary;
+    background-color: rgba($color-primary, .9);
     width: 100%;
     transition: 0.2s;
     transform: translateY(0%);

@@ -2,6 +2,7 @@ form{
   margin-top: 8rem;
   transition: all 2s ease-in-out;
 
+
 }
 
 
@@ -17,8 +18,19 @@ form{
   font-size: 1.8rem;
   padding: 3rem 6rem;
 
-  input, select, textarea{
+  @include respond(tab-port){
+     width: 80%;
+    text-align: center;
+    margin: 4rem auto;
+  }
+  @include respond(phone){
+    width: 100%;
+    border-radius: unset;
+    padding: 2rem 1rem;
 
+  }
+
+  input, select, textarea{
     border: none;
     border-bottom: 1px solid $color-grey;
     width: 100%;
@@ -27,12 +39,16 @@ form{
     border-radius: .7rem  ;
     font-family: inherit;
     outline: none;
+    @include respond(phone){
+      font-size: 2.2rem;
+    }
 
       &[type=submit]{
         width: 25rem;
         border-radius: 10rem;
         font-family: 'Varela Round', sans-serif;
         text-transform: uppercase;
+        color: $color-primary;
       }
 
   }

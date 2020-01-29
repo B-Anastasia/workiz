@@ -89,7 +89,7 @@ html {
     position: fixed;
     top: 80px;
     padding: 16px 0;
-    background-color: #F9DD1A;
+    background-color: rgba(249, 221, 26, 0.9);
     width: 100%;
     transition: 0.2s;
     transform: translateY(0%); }
@@ -141,7 +141,10 @@ html {
   align-items: center; }
   @media only screen and (max-width: 56.25em) {
     .hero {
-      flex-direction: column; } }
+      background-image: linear-gradient(to right bottom, rgba(217, 216, 211, 0.6), rgba(246, 246, 246, 0.5)), url("./../img/hero-bc-smq.jpg");
+      height: 100%;
+      display: inline-block;
+      width: 100%; } }
   .hero__title {
     font-size: 4rem;
     font-family: 'Fredoka One', coursive, sans-serif;
@@ -155,7 +158,8 @@ html {
   max-width: 40rem; }
   @media only screen and (max-width: 56.25em) {
     .hero-text {
-      width: 100%; } }
+      padding-top: 10rem;
+      margin: 0 auto; } }
 
 form {
   margin-top: 8rem;
@@ -172,6 +176,16 @@ form {
   outline: none;
   font-size: 1.8rem;
   padding: 3rem 6rem; }
+  @media only screen and (max-width: 56.25em) {
+    .contact-form {
+      width: 80%;
+      text-align: center;
+      margin: 4rem auto; } }
+  @media only screen and (max-width: 37.5em) {
+    .contact-form {
+      width: 100%;
+      border-radius: unset;
+      padding: 2rem 1rem; } }
   .contact-form input, .contact-form select, .contact-form textarea {
     border: none;
     border-bottom: 1px solid #D9D8D3;
@@ -181,11 +195,15 @@ form {
     border-radius: .7rem;
     font-family: inherit;
     outline: none; }
+    @media only screen and (max-width: 37.5em) {
+      .contact-form input, .contact-form select, .contact-form textarea {
+        font-size: 2.2rem; } }
     .contact-form input[type=submit], .contact-form select[type=submit], .contact-form textarea[type=submit] {
       width: 25rem;
       border-radius: 10rem;
       font-family: 'Varela Round', sans-serif;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      color: #F9DD1A; }
   .contact-form textarea {
     resize: none;
     overflow: auto;
@@ -206,7 +224,7 @@ form {
 .btn {
   transition: all 0.2s;
   background-color: #383836;
-  color: #fff;
+  color: #F9DD1A;
   font-family: inherit; }
   .btn, .btn:link, .btn:visited {
     font-size: 1.6rem;

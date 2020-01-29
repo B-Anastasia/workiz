@@ -8,9 +8,19 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @include respond(tab-port){
+    background-image: linear-gradient(to right bottom,
+            rgba($color-grey, 0.6),
+            rgba($color-grey-light, 0.5)),
+    url("./../img/hero-bc-smq.jpg");
+          height: 100%;
+        display: inline-block;
+    width: 100%;
+  };
          
   @include respond(tab-port){
-    flex-direction: column;
+    //flex-direction: column;
   }
 
   &__title{
@@ -29,6 +39,7 @@
   max-width: 40rem;
 
   @include respond(tab-port){
-    width: 100%;
+    padding-top: 10rem;;
+   margin: 0 auto;
   }
 }

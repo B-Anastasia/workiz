@@ -29,8 +29,84 @@ body {
   max-width: 1200px;
   margin: auto; }
 
-.hide {
-  display: none; }
+html {
+  font-size: 62.5%; }
 
-.navbar .logo__text {
-  font-family: 'Fredoka One', coursive, sans-serif; }
+.navbar {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%; }
+  .navbar-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px; }
+  .navbar .logo {
+    text-align: center;
+    color: #383836; }
+    .navbar .logo__text {
+      display: inline-block;
+      font-size: 2.1rem;
+      background-color: #F9DD1A;
+      border-radius: 5px;
+      padding: 2px 5px;
+      margin-bottom: 2px;
+      font-family: 'Fredoka One', coursive, sans-serif; }
+    .navbar .logo__description {
+      font-size: 1.5rem;
+      display: block;
+      font-weight: bolder; }
+  .navbar .menu {
+    position: fixed;
+    top: 80px;
+    padding: 16px 0;
+    background-color: #F9DD1A;
+    width: 100%;
+    transition: 0.2s;
+    transform: translateY(0%); }
+    .navbar .menu_active {
+      transform: translateY(0); }
+    .navbar .menu__nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-around; }
+    .navbar .menu__link {
+      text-transform: uppercase;
+      font-size: 1.7rem;
+      text-decoration: none;
+      color: #fff; }
+    .navbar .menu-button {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      background-color: transparent;
+      height: 80px;
+      width: 70px;
+      border: none; }
+      .navbar .menu-button__line {
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: #383836;
+        margin: 2px 0; }
+
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(217, 216, 211, 0.6), rgba(246, 246, 246, 0.5)), url("./../img/hero-bc.jpg");
+  background-size: cover;
+  background-position: top; }
+  .hero__title {
+    font-size: 4rem;
+    font-family: 'Fredoka One', coursive, sans-serif;
+    color: #383836;
+    letter-spacing: 1.5px; }
+  .hero__description {
+    font-size: 1.5rem; }
+
+.hero-text {
+  width: 20rem;
+  position: absolute;
+  top: 40%; }

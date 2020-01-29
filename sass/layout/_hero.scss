@@ -1,0 +1,29 @@
+.hero { height: 100vh;
+  background-image: linear-gradient(to right bottom,
+          rgba($color-grey, 0.6),
+          rgba($color-grey-light, 0.5)),
+  url("./../img/hero-bc.jpg");
+  background-size: cover;
+  background-position: top;
+
+
+  
+
+
+
+  &__title{
+    font-size: 4rem;
+   @include bold;
+    color: $color-primary-brown;
+    letter-spacing: 1.5px;
+  }
+
+  &__description{
+    font-size: 1.5rem;
+  }
+}
+.hero-text {
+  width: 20rem;
+  position: absolute;
+  top: 40%;
+}

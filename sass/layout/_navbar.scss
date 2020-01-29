@@ -1,8 +1,79 @@
-.navbar{
-  .logo{
-    &__text{
+.navbar {position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
 
-     @include bold
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+
+  }
+  .logo{
+    text-align: center;
+    color: $color-primary-brown;
+    &__text{
+      display: inline-block;
+      font-size: 2.1rem;
+      background-color: $color-primary;
+      border-radius: 5px;
+      padding: 2px 5px;
+      margin-bottom: 2px;
+      @include bold;
+    }
+    &__description{
+      font-size: 1.5rem;
+      display: block;
+      font-weight: bolder;
     }
   }
+
+  .menu {
+    position: fixed;
+    top: 80px;
+    padding: 16px 0;
+    background-color: $color-primary;
+    width: 100%;
+    transition: 0.2s;
+    transform: translateY(0%);
+    &_active{
+      transform: translateY(0);
+    }
+    &__nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    &__link{
+      text-transform: uppercase;
+      font-size: 1.7rem;
+      text-decoration: none;
+      color: #fff;
+    }
+
+
+
+    &-button {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      background-color: transparent;
+      height: 80px;
+      width: 70px;
+      border: none;
+
+      &__line {
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: $color-primary-brown;
+        margin: 2px 0;
+      }
+    }
+  }
+
 }

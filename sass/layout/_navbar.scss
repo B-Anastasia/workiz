@@ -4,6 +4,11 @@
   left: 0;
   width: 100%;
 
+  .menu-over{
+    position: relative;
+    background-color: #ffffff;
+  }
+
   &-wrap {
     display: flex;
     justify-content: space-between;
@@ -44,8 +49,8 @@
     padding: 16px 0;
     background-color: rgba($color-primary, .9);
     width: 100%;
-    transition: 0.2s;
-    transform: translateY(0%);
+    transition: 2s;
+    transform: translateY(-100%);
     &_active{
       transform: translateY(0);
     }

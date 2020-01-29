@@ -59,6 +59,9 @@ html {
   top: 0;
   left: 0;
   width: 100%; }
+  .navbar .menu-over {
+    position: relative;
+    background-color: #ffffff; }
   .navbar-wrap {
     display: flex;
     justify-content: space-between;
@@ -91,8 +94,8 @@ html {
     padding: 16px 0;
     background-color: rgba(249, 221, 26, 0.9);
     width: 100%;
-    transition: 0.2s;
-    transform: translateY(0%); }
+    transition: 2s;
+    transform: translateY(-100%); }
     .navbar .menu_active {
       transform: translateY(0); }
     .navbar .menu__nav {

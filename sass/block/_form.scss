@@ -11,52 +11,77 @@
   font-size: 1.8rem;
   padding: 3rem 6rem;
 
-  @include respond(tab-port){
-     width: 80%;
+  @include respond(tab-port) {
+    width: 80%;
     text-align: center;
     margin: 4rem auto;
   }
-  @include respond(phone){
+  @include respond(phone) {
     width: 100%;
     border-radius: unset;
     padding: 2rem 1rem;
 
   }
 
-  input, select, textarea{
+  .form {
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  span {
+    color: red;
+    font-size: 1.5rem;
+    line-height: 1;
+    border-color: red;
+  }
+
+  input, select, textarea {
     border: none;
     border-bottom: 1px solid $color-grey;
     width: 100%;
     padding: 1rem;
-    margin: 1rem 0;
-    border-radius: .7rem  ;
+    border-radius: .7rem;
     font-family: inherit;
     outline: none;
-    @include respond(phone){
+    @include respond(phone) {
       font-size: 2.2rem;
     }
 
-      &[type=submit]{
-        width: 25rem;
-        border-radius: 10rem;
-        font-family: 'Varela Round', sans-serif;
-        text-transform: uppercase;
-        color: $color-primary;
-      }
+    .mask{
+      font-size: 1.6rem;
+      padding-right: 1rem;
+      background-color: transparent;
+      text-transform: uppercase;
+    }
+
+
+    &[type=submit] {
+      width: 25rem;
+      border-radius: 10rem;
+      font-family: 'Varela Round', sans-serif;
+      text-transform: uppercase;
+      color: $color-primary;
+    }
 
   }
-  textarea{
+
+  textarea {
     resize: none;
     overflow: auto;
     outline: none;
     margin-bottom: 2rem;
     color: $color-primary-brown;
   }
-  select{
+  .selectWorkshop{
+    text-align: center;
+    line-height: 3rem;
+  }
+  select {
     color: $color-primary-brown;
-    option{
+
+    option {
       outline: none;
-      
+
     }
   }
 

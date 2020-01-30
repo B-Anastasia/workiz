@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -47,31 +47,45 @@
 </header>
 <section>
     <div class="hero" id="home">
-            <div class="hero-text">
-                <h1 class="hero__title">
-                    Workshop:<br>Finding your focus
-                </h1>
-                <span class="hero__description">
+        <div class="hero-text">
+            <h1 class="hero__title">
+                Workshop:<br>Finding your focus
+            </h1>
+            <span class="hero__description">
                 *Workshops occur on the first Sunday of each first month in each quarter
             </span>
-            </div>
-            <form id="contact-form" action="" method="post">
-                <div class="contact-form">
-                    <div class="contact-form__title">Take a Workshop</div>
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                    <input type="email" name="email" class="form-control" placeholder="Your E-mail" required>
-                    <input type="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  placeholder="Your Telephone number"
-                           required>
-                    <select name="workshop" id="workshop"   class="form-control"> Choose please your workshop
-                        <option value="work1">1 workshop</option>
-                        <option value="work2">2 workshop</option>
-                        <option value="work3">3 workshop</option>
-                        <option value="work4">4 workshop</option>
-                    </select>
-                    <textarea name="message" id="message" class="form-control" rows="4" placeholder="You can write your message here"></textarea>
-                    <input type="submit" class="contact-form__btn form-control  btn" value="Get started now">
+        </div>
+        <form id="contact-form" action="index.php" method="post"  name="vform">
+            <div class="contact-form">
+                <div class="contact-form__title">Take a Workshop</div>
+                <div id="inputName" class="form">
+                    <input type="text" name="name" class="form-control" id="firstNameInput"
+                           placeholder="* Your Full Name">
                 </div>
-            </form>
+                <div id="email" class="form">
+                    <input type="email" name="email" id="inputEmail" class="form-control" placeholder="* Your E-mail"
+                           >
+                </div>
+                <div id="phone" class="form">
+                    <label for="inputTel">Phone</label>
+                    <input type="tel" name="tel" id="inputTel" class="mask"
+                           placeholder="xxx-xxx-xxxx"                            >
+                </div>
+                <div class="selectWorkshop form">
+                    <label for="workshop">Please choose your workshop</label>
+                    <select name="workshop" id="workshop" class="form-control"> Choose please your workshop
+                    <option value="no_value">Not chosen</option>
+                    <option value="work1">1 workshop</option>
+                    <option value="work2">2 workshop</option>
+                    <option value="work3">3 workshop</option>
+                    <option value="work4">4 workshop</option>
+                </select>
+                </div>
+                <textarea name="message" id="message" class="form-control form" rows="4"
+                          placeholder="You can write your message here"></textarea>
+                <input type="submit" class="contact-form__btn form-control  btn" value="Get started now">
+            </div>
+        </form>
 
     </div>
     <!-- /.hero -->

@@ -145,18 +145,30 @@ html {
       width: 100%;
       border-radius: unset;
       padding: 2rem 1rem; } }
+  .contact-form .form {
+    margin: 1rem 0;
+    width: 100%; }
+  .contact-form span {
+    color: red;
+    font-size: 1.5rem;
+    line-height: 1;
+    border-color: red; }
   .contact-form input, .contact-form select, .contact-form textarea {
     border: none;
     border-bottom: 1px solid #D9D8D3;
     width: 100%;
     padding: 1rem;
-    margin: 1rem 0;
     border-radius: .7rem;
     font-family: inherit;
     outline: none; }
     @media only screen and (max-width: 37.5em) {
       .contact-form input, .contact-form select, .contact-form textarea {
         font-size: 2.2rem; } }
+    .contact-form input .mask, .contact-form select .mask, .contact-form textarea .mask {
+      font-size: 1.6rem;
+      padding-right: 1rem;
+      background-color: transparent;
+      text-transform: uppercase; }
     .contact-form input[type=submit], .contact-form select[type=submit], .contact-form textarea[type=submit] {
       width: 25rem;
       border-radius: 10rem;
@@ -169,6 +181,9 @@ html {
     outline: none;
     margin-bottom: 2rem;
     color: #383836; }
+  .contact-form .selectWorkshop {
+    text-align: center;
+    line-height: 3rem; }
   .contact-form select {
     color: #383836; }
     .contact-form select option {

@@ -5,6 +5,8 @@ const submit_btn = document.getElementById("contact-form");
 const fieldName = document.getElementById("firstNameInput");
 const fieldEmail = document.getElementById("inputEmail");
 const fieldTel = document.getElementById("inputTel");
+const fieldComment = document.getElementById("message");
+const fieldWorkshop = document.getElementById("workshop");
 
 
 menu_btn.addEventListener("click", toggleMenu);
@@ -97,13 +99,14 @@ const correctFunction = (input) => {
         }
     }
 };
+//
+// const submitFunction = (e) => {
+//     e.preventDefault();
+//     console.log("000");
+//     if (!(!checkFunction(fieldName)&&!checkFunction(fieldEmail)&&!checkFunction(fieldTel))){
+//       console.log("1");
+//     }
+// }
+//
+// submit_btn.addEventListener('submit', submitFunction) ;
 
-const submitFunction = (e) => {
-    e.preventDefault();
-    console.log("000");
-    if (!(!checkFunction(fieldName)&&!checkFunction(fieldEmail)&&!checkFunction(fieldTel))){
-      console.log("1");
-    }
-}
-
-submit_btn.addEventListener('submit', submitFunction) ;

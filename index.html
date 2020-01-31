@@ -52,10 +52,10 @@
                 Workshop:<br>Finding your focus
             </h1>
             <span class="hero__description">
-                *Workshops occur on the first Sunday of each first month in each quarter
-            </span>
+*Workshops occur on the first Sunday of each first month in each quarter
+</span>
         </div>
-        <form id="contact-form"   name="vform">
+        <form id="contact-form" action="functions/ajax.php" method="post" name="form">
             <div class="contact-form">
                 <div class="contact-form__title">Take a Workshop</div>
                 <div id="inputName" class="form">
@@ -71,22 +71,23 @@
                 <div id="phone" class="form">
                     <label for="inputTel">Phone</label>
                     <input type="tel" name="tel" id="inputTel" class="mask"
-                           placeholder="xxx-xxx-xxxx" onblur=checkFunction(this); onfocus="correctFunction(this)"     >
+                           placeholder="xxx-xxx-xxxx" onblur=checkFunction(this); onfocus="correctFunction(this)">
                     <div id="errorTel" class="errorTxt"></div>
                 </div>
                 <div class="selectWorkshop form">
                     <label for="workshop">Please choose your workshop</label>
                     <select name="workshop" id="workshop" class="form-control"> Choose please your workshop
-                    <option value="no_value">Not chosen</option>
-                    <option value="work1">1 workshop</option>
-                    <option value="work2">2 workshop</option>
-                    <option value="work3">3 workshop</option>
-                    <option value="work4">4 workshop</option>
-                </select>
+                        <option value="no_value">Not chosen</option>
+                        <option value="work1">1 workshop</option>
+                        <option value="work2">2 workshop</option>
+                        <option value="work3">3 workshop</option>
+                        <option value="work4">4 workshop</option>
+                    </select>
                 </div>
                 <textarea name="message" id="message" class="form-control form" rows="4"
                           placeholder="You can write your message here"></textarea>
-                <input type="submit" id="submit_btn" class="contact-form__btn form-control  btn" value="Get started now">
+                <input type="submit" id="submit_btn" class="contact-form__btn form-control  btn"
+                       value="Get started now">
             </div>
         </form>
 
@@ -96,13 +97,19 @@
 <!-- /.header -->
 
 <!--<script src="js/second.js"></script>-->
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
+<script src="js/ajax.js"></script>
+
 </body>
 </html>
 
 
 <!--  <div class="navbar__mobile">
 
-                  <strong>Call Now: </strong><a href="tel:8557907363" class="navbar__phone">855-790-7363</a>
-                  <strong>Mail Us: </strong><a href="mailto: info@workiz.com" class="navbar__email">info@workiz.com</a>
-              </div>     -->
+<strong>Call Now: </strong><a href="tel:8557907363" class="navbar__phone">855-790-7363</a>
+<strong>Mail Us: </strong><a href="mailto: info@workiz.com" class="navbar__email">info@workiz.com</a>
+</div>     -->

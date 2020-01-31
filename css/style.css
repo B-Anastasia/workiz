@@ -153,6 +153,8 @@ html {
     font-size: 1.5rem;
     line-height: 1;
     border-color: red; }
+  .contact-form .invalid {
+    border: 1px solid red; }
   .contact-form input, .contact-form select, .contact-form textarea {
     border: none;
     border-bottom: 1px solid #D9D8D3;
@@ -194,6 +196,11 @@ html {
     width: 100%;
     font-weight: bold;
     text-align: center; }
+
+.errorTxt {
+  color: red;
+  font-size: 1.5rem;
+  line-height: 1.5; }
 
 .btn {
   transition: all 0.2s;

@@ -60,16 +60,19 @@
                 <div class="contact-form__title">Take a Workshop</div>
                 <div id="inputName" class="form">
                     <input type="text" name="name" class="form-control" id="firstNameInput"
-                           placeholder="* Your Full Name">
+                           placeholder="* Your Full Name" onblur=checkFunction(this); onfocus="correctFunction(this)">
+                    <div id="errorText" class="errorTxt"></div>
                 </div>
                 <div id="email" class="form">
                     <input type="email" name="email" id="inputEmail" class="form-control" placeholder="* Your E-mail"
-                           >
+                           onblur=checkFunction(this); onfocus="correctFunction(this)">
+                    <div id="errorEmail" class="errorTxt"></div>
                 </div>
                 <div id="phone" class="form">
                     <label for="inputTel">Phone</label>
                     <input type="tel" name="tel" id="inputTel" class="mask"
-                           placeholder="xxx-xxx-xxxx"                            >
+                           placeholder="xxx-xxx-xxxx" onblur=checkFunction(this); onfocus="correctFunction(this)"     >
+                    <div id="errorTel" class="errorTxt"></div>
                 </div>
                 <div class="selectWorkshop form">
                     <label for="workshop">Please choose your workshop</label>

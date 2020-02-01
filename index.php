@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -25,9 +24,7 @@
         </div>
         <div class="menu-over">
             <div class="container">
-
                 <div class="navbar-wrap">
-
                     <div class="logo navbar__logo">
                         <strong class="logo__text">Workiz</strong>
                         <span class="logo__description">Handyman Training</span>
@@ -39,17 +36,15 @@
                     </button>
                 </div>
                 <!-- /.navbar-wrap -->
-
             </div>
         </div>
-
     </div>
     <!-- /.navbar -->
 </header>
 <section>
-<div class="message">
+    <div class="message">
         <div id="message_resp"></div>
-</div>
+    </div>
     <div class="hero" id="home">
         <div class="hero-text">
             <h1 class="hero__title">
@@ -94,25 +89,21 @@
                        value="Get started now">
             </div>
         </form>
-
     </div>
     <!-- /.hero -->
 </section>
 <!-- /.header -->
-
 <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 <script src="js/ajax.js"></script>
-
 </body>
 </html>
 
 
 <!--  <div class="navbar__mobile">
-
 <strong>Call Now: </strong><a href="tel:8557907363" class="navbar__phone">855-790-7363</a>
 <strong>Mail Us: </strong><a href="mailto: info@workiz.com" class="navbar__email">info@workiz.com</a>
-</div>     -->
+</div>-->

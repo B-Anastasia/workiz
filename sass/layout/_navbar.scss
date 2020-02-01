@@ -1,4 +1,5 @@
-.navbar {position: fixed;
+.navbar {
+  position: fixed;
   background-color: #fff;
   top: 0;
   left: 0;
@@ -22,7 +23,6 @@
     text-align: center;
     color: $color-primary-brown;
 
-
     &__text{
       display: inline-block;
       font-size: 2.1rem;
@@ -42,7 +42,4 @@
       font-weight: bolder;
     }
   }
-
-
-
 }

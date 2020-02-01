@@ -47,6 +47,9 @@
     <!-- /.navbar -->
 </header>
 <section>
+<div class="message">
+        <div id="message_resp"></div>
+</div>
     <div class="hero" id="home">
         <div class="hero-text">
             <h1 class="hero__title">
@@ -56,7 +59,7 @@
 *Workshops occur on the first Sunday of each first month in each quarter
 </span>
         </div>
-        <form id="contact-form" action="functions/ajax.php" method="post" name="form">
+        <form id="contact-form" action="functions/function.php" method="post" name="form">
             <div class="contact-form">
                 <div class="contact-form__title">Take a Workshop</div>
                 <div id="inputName" class="form">
@@ -78,7 +81,7 @@
                 <div class="selectWorkshop form">
                     <label for="workshop">Please choose your workshop</label>
                     <select name="workshop" id="workshop" class="form-control"> Choose please your workshop
-                        <option value="no_value">Not chosen</option>
+                        <option value="">Not chosen</option>
                         <option value="work1">1 workshop</option>
                         <option value="work2">2 workshop</option>
                         <option value="work3">3 workshop</option>
@@ -97,7 +100,6 @@
 </section>
 <!-- /.header -->
 
-<!--<script src="js/second.js"></script>-->
 <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

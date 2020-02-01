@@ -1,14 +1,13 @@
-//Toggle menu button on click
 const menu_btn = document.getElementById('menu_btn');
 const menu_line = document.getElementById('menu_line');
-const submit_btn = document.getElementById("contact-form");
 const fieldName = document.getElementById("firstNameInput");
 const fieldEmail = document.getElementById("inputEmail");
 const fieldTel = document.getElementById("inputTel");
 const fieldComment = document.getElementById("message");
 const fieldWorkshop = document.getElementById("workshop");
+const message_resp = document.getElementById("message_resp");
 
-
+//Toggle menu button on click
 menu_btn.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
@@ -34,7 +33,6 @@ const checkFunction = (input) => {
             input.classList.add("invalid");
             console.log("err");
             errorText.innerHTML = "Required field";
-
             return false;
         } else {
             return true;
@@ -50,28 +48,22 @@ const checkFunction = (input) => {
             input.classList.add("invalid");
             errorEmail.innerHTML = val + " is not valid. Please enter a valid e-mail address";
             return false;
-        }   else {
+        } else {
             return true;
         }
 //Validation Phone Field
     } else if (input.type === "tel") {
         let reg = /[0-9]{3}-[0-9]{3}-[0-9]{4}/;
         if (val === '' || val == null) {
-            if (input.classList.contains('invalid')) {
-                input.classList.remove('invalid');
-                errorTel.innerHTML = "";
-                return false;
-            }
+            return true;
         } else if (reg.test(val) !== true) {
             input.classList.add("invalid");
             errorTel.innerHTML = "Please enter a valid phone number xxx-xxx-xxxx";
             return false;
-        }  else {
+        } else {
             return true;
         }
     }
-
-
 };
 
 const correctFunction = (input) => {
@@ -99,14 +91,5 @@ const correctFunction = (input) => {
         }
     }
 };
-//
-// const submitFunction = (e) => {
-//     e.preventDefault();
-//     console.log("000");
-//     if (!(!checkFunction(fieldName)&&!checkFunction(fieldEmail)&&!checkFunction(fieldTel))){
-//       console.log("1");
-//     }
-// }
-//
-// submit_btn.addEventListener('submit', submitFunction) ;
+
 

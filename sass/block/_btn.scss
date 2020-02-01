@@ -1,8 +1,8 @@
-.btn{
+.btn {
   transition: all 0.2s;
   background-color: $color-primary-brown;
   color: $color-primary;
-      font-family: inherit;
+  font-family: inherit;
 
   &,
   &:link,
@@ -30,5 +30,4 @@
     transform: translateY(-1px);
     border: none;
   }
-
-   }
+}

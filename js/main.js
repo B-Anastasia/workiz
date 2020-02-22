@@ -8,10 +8,11 @@ const fieldWorkshop = document.getElementById("workshop");
 const message_resp = document.getElementById("message_resp");
 
 //Toggle menu button on click
-menu_btn.addEventListener("click", toggleMenu);
+menu_btn.addEventListener("click", timeMenu);
 
-function toggleMenu() {
-    menu_line.classList.toggle("menu_active");
+function timeMenu(){
+        menu_line.classList.add("menu_active");
+        setTimeout(()=>{menu_line.classList.remove("menu_active")}, 8000);
 }
 
 //Validation Form

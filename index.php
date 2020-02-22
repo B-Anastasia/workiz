@@ -26,7 +26,7 @@
             <div class="container">
                 <div class="navbar-wrap">
                     <div class="logo navbar__logo">
-                        <strong class="logo__text">Workiz</strong>
+                        <strong class="logo__text">Workshop</strong>
                         <span class="logo__description">Handyman Training</span>
                     </div>
                     <button class="menu-button" id="menu_btn">

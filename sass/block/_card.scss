@@ -1,0 +1,23 @@
+.about_story{
+  display: flex;
+  justify-content: space-around;
+
+  @include respond(tab-port){
+    flex-wrap: wrap;
+  }
+  &--card{
+    margin: 4rem 3rem;
+    font-size: 1.6rem;
+
+    @include respond(tab-port){
+      margin: 2rem 0;
+    }
+
+    .card-icon{
+      width: 6rem;
+      height: 6rem;
+      fill: $color-primary;
+      margin-bottom: 2rem;
+    }
+  }
+}

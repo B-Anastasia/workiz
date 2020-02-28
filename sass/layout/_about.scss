@@ -1,0 +1,20 @@
+.about{
+  text-align: center;
+  margin: 6rem 0;
+  color: $color-primary-brown;
+  &_title{
+    line-height: 2;
+    margin-bottom: 2rem;
+
+    @include respond(phone){
+      line-height: 1.5;
+    }
+    p{
+      font-size: 4rem;
+      color: $color-primary;
+      @include respond(phone-xs){
+        font-size: 3rem;
+      }
+    }
+  }
+}

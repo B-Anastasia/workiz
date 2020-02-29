@@ -10,7 +10,7 @@
   @include respond(tab-land){
     min-width: 45rem;
   }
-  @include respond(phone-xs){
+  @include respond(phone){
     min-width: 80%;
   }
 

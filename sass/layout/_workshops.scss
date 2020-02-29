@@ -1,0 +1,39 @@
+.workshops{
+  &:before{
+    top: 0;
+    left: 50%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: white;
+    border-width: 2rem;
+    transform: translate(-50%);
+  }
+
+  position: relative;
+  padding: 6rem 0;
+  background-color: $color-primary;
+  text-align: center;
+  color: $color-primary-brown;
+  &_title{
+    p{
+      font-size: 2rem;
+      color: $color-grey-light;
+    }
+  }
+  &_cards{
+  display: flex;
+    justify-content: space-between;
+    margin-bottom: 7rem;
+    @include respond(tab-land){
+      flex-wrap: wrap;
+    }
+    @include respond(tab-port){
+      flex-direction: column;
+    }
+
+  }
+}

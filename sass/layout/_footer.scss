@@ -1,0 +1,48 @@
+.bottom{
+  background-color: $color-primary-brown;
+  color: white;
+  padding: 4rem 0;
+  font-size: 1.4rem;
+  &_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(phone){
+      flex-direction: column;
+      line-height: 2;
+      text-align: center;
+    }
+  }
+  .copyright{
+  }
+  .git{
+    margin-top: 1rem;
+    &-icon{
+      width: 3rem;
+      height: 3rem;
+      fill: white;
+      &:hover,
+      &:active {
+        fill: $color-primary;
+      }
+    }
+  }
+  .contacts {
+    min-width: 25rem;
+    cursor: pointer;
+
+    a {
+      color: white;
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+    }
+  }
+  }
+}

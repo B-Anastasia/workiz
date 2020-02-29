@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Workiz Handyman Training</title>
+    <title>Workshop Handyman Training</title>
     <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap&subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -17,9 +17,9 @@
             <div class="container">
                 <nav class="menu__nav">
                     <a href="#home" class="menu__link">Home </a>
-                    <a href="#" class="menu__link">About us</a>
-                    <a href="#" class="menu__link">Workshops</a>
-                    <a href="#" class="menu__link">Contact us</a></nav>
+                    <a href="#about" class="menu__link">About us</a>
+                    <a href="#workshops" class="menu__link">Workshops</a>
+                    <a href="#contacts" class="menu__link">Contact us</a></nav>
             </div>
         </div>
         <div class="menu-over">
@@ -41,6 +41,7 @@
     </div>
     <!-- /.navbar -->
 </header>
+<!-- /.header -->
 <section>
     <div class="message">
         <div id="message_resp"></div>
@@ -92,7 +93,93 @@
     </div>
     <!-- /.hero -->
 </section>
-<!-- /.header -->
+<section>
+    <div class="about" id="about">
+        <div class="container">
+            <div class="about_title">
+                <h2 class="title">Our Mission!</h2>
+                <p>We here for help you to grow!</p>
+            </div>
+            <h2 class="title">What we do</h2>
+            <div class="about_story">
+                <div class="about_story--card">
+                    <svg class="card-icon">
+                        <use xlink:href="img/sprite.svg#icon-clipboard"></use>
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi magni quae voluptate! Aspernatur aut,
+                        inventore iure molestias nisi odit soluta?</p>
+                </div>
+                <div class="about_story--card">
+                    <svg class="card-icon">
+                        <use xlink:href="img/sprite.svg#icon-meter"></use>
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi magni quae voluptate! Aspernatur aut,
+                        inventore iure molestias nisi odit soluta?</p>
+                </div>
+                <div class="about_story--card">
+                    <svg class="card-icon">
+                        <use xlink:href="img/sprite.svg#icon-rocket"></use>
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi magni quae voluptate! Aspernatur aut,
+                        inventore iure molestias nisi odit soluta?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="workshops" id="workshops">
+        <div class="workshops_title">
+            <h2 class="title">Welcome to our Workshops!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, voluptatum.</p>
+        </div>
+        <div class="workshops_cards container">
+            <div class="workshops_card">
+                <div class="workshop workshop_img-1">
+                    <div class="workshop_title">Workshop 1</div>
+                    <a href="#" class="btn btn-white">Know more</a>
+                </div>
+            </div>
+            <div class="workshops_card">
+                <div class="workshop workshop_img-2">
+                    <div class="workshop_title">Workshop 2</div>
+                    <a href="#" class="btn btn-white">Know more</a>
+                </div>
+            </div>
+            <div class="workshops_card">
+                <div class="workshop workshop_img-3">
+                    <div class="workshop_title">Workshop 3</div>
+                    <a href="#" class="btn btn-white">Know more</a>
+                </div>
+            </div>
+            <div class="workshops_card">
+                <div class="workshop workshop_img-4">
+                    <div class="workshop_title ">Workshop 4</div>
+                    <a href="#" class="btn btn-white">Know more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<footer>
+    <div class="bottom">
+        <div class="bottom_main container">
+            <span class="copyright">© 2020 All rights reserved.</span>
+            <a href="https://github.com/B-Anastasia" class="git">
+                <svg class="git-icon">
+                    <use xlink:href="img/sprite.svg#icon-github"></use>
+                </svg>
+            </a>
+            <div class="contacts" id="contacts">
+                <span>Call Now: </span><a href="tel:123456789" class="contacts_phone">123-456-789</a><br>
+                <span>Mail Us: </span><a href="mailto: boshniak.a@gmail.com" class="contacts_email">boshniak.a@gmail.com</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
 <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -101,9 +188,3 @@
 <script src="js/ajax.js"></script>
 </body>
 </html>
-
-
-<!--  <div class="navbar__mobile">
-<strong>Call Now: </strong><a href="tel:8557907363" class="navbar__phone">855-790-7363</a>
-<strong>Mail Us: </strong><a href="mailto: info@workiz.com" class="navbar__email">info@workiz.com</a>
-</div>-->

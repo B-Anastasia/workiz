@@ -1,2 +1,2 @@
-# workiz
-Workiz Handyman Training
+# workshop
+Workshop Handyman Training
